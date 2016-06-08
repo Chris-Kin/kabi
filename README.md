@@ -1,3 +1,5 @@
+# Chrome插件编写简明步骤
+
 >官网是最可信的参考，这是链接：[https://developer.chrome.com/extensions/getstarted](https://developer.chrome.com/extensions/getstarted)
 
 ###1 编写chrome指定好名称和内容的manifest.json文件
