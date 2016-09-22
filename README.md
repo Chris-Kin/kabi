@@ -1,6 +1,8 @@
 # Chrome插件编写简明步骤
 
->官网是最可信的参考，这是链接：[https://developer.chrome.com/extensions/getstarted](https://developer.chrome.com/extensions/getstarted)
+> 官网是最可信的参考，这是链接：[https://developer.chrome.com/extensions/getstarted](https://developer.chrome.com/extensions/getstarted)
+> 360的文档也是比较不错的：[http://open.chrome.360.cn/extension_dev/overview.html](http://open.chrome.360.cn/extension_dev/overview.html)
+> 图灵社区一会员的文章也值得推荐：[http://www.ituring.com.cn/article/60212](http://www.ituring.com.cn/article/60212)
 
 ###1 编写chrome指定好名称和内容的manifest.json文件
 
@@ -34,7 +36,7 @@
 ###2 编写test.js
 
 	document.querySelector("#kw").value = "谷歌";
-    
+
 ###3 在chrome中引入插件
 >提示： manifest.json icon.png test.js等文件都要位于同一文件夹中
 
@@ -45,5 +47,3 @@
 4. 若修改了插件，需要点击重新加载按钮
 
 这便是chrome插件开发的最核心步骤。
-
-
