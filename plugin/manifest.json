@@ -1,29 +1,51 @@
 {
     "manifest_version": 2,
-    "name": "Fill Form",
-    "version": "1.2",
+    "name": "Super Kit",
+    "version": "0.0.1",
     "description": "The first extension that I made.",
     "browser_action": {
         "default_icon": "icon.png",
+        "default_title": "没名儿插件",
         "default_popup": "popup.html"
     },
     "permissions": [
         "http://*/",
         "bookmarks",
         "tabs",
-        "history"
+        "history",
+        "contextMenus",
+        "notifications"
     ],
+    "icons": {
+        "16": "icon.png"
+    },
+    "background": {
+        "scripts": [
+            "scripts/163.js"
+        ]
+    },
+    "options_page": "options.html",
     "content_scripts": [
         {
             "matches": [
                 "https://www.baidu.com/*"
             ],
             "css": [
-                "test.css"
+                "./styles/test.css"
             ],
             "js": [
-                "test.js"
+                "./scripts/baidu.js"
             ]
+        },{
+          "matches": [
+              "http://music.163.com/*"
+          ],
+          "css": [
+              "./styles/test.css"
+          ],
+          "js": [
+              "./scripts/163.js"
+          ]
         }
     ]
 }

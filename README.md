@@ -8,7 +8,7 @@
 
 	{
     "manifest_version": 2, //建议设置为2
-    "name": "Fill Form",
+    "name": "Super Kit",
     "version": "1.2",
     "description": "do it.",
     "browser_action": {
@@ -47,3 +47,6 @@
 4. 若修改了插件，需要点击重新加载按钮
 
 这便是chrome插件开发的最核心步骤。
+
+#### 注意事项：
+- html中禁止写script标签，应外部引用
