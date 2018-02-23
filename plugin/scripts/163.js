@@ -1,1 +1,0 @@
-alert("welcome, and relex~");
