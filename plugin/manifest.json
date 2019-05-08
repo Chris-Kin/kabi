@@ -1,29 +1,42 @@
 {
-    "manifest_version": 2,
-    "name": "Fill Form",
-    "version": "1.2",
-    "description": "The first extension that I made.",
-    "browser_action": {
-        "default_icon": "icon.png",
-        "default_popup": "popup.html"
-    },
-    "permissions": [
-        "http://*/",
-        "bookmarks",
-        "tabs",
-        "history"
-    ],
-    "content_scripts": [
-        {
-            "matches": [
-                "https://www.baidu.com/*"
-            ],
-            "css": [
-                "test.css"
-            ],
-            "js": [
-                "test.js"
-            ]
-        }
+  "manifest_version": 2,
+  "name": "Super Kit",
+  "version": "0.0.1",
+  "description": "The first extension that I made.",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "可劲儿造",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "http://*/",
+    "bookmarks",
+    "tabs",
+    "history",
+    "topSites",
+    "contextMenus",
+    "notifications"
+  ],
+  "icons": {
+    "16": "icon.png"
+  },
+  "background": {
+    "scripts": [
+      "scripts/background.js"
     ]
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "css": [
+        "./styles/test.css"
+      ],
+      "js": [
+        "/scripts/content.js"
+      ]
+    }
+  ]
 }
